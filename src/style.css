@@ -1,0 +1,74 @@
+@import 'tailwindcss';
+
+@layer base {
+  body {
+    /* fallback for old browser support */
+    min-height: 100vh;
+    min-height: 100dvh;
+    background-color: var(--color-grey950);
+    color: var(--color-grey200);
+  }
+  #root {
+    min-height: 100vh;
+    min-height: 100dvh;
+  }
+}
+
+@theme {
+  --color-grey950: oklch(13.231% 0.00966 297.603);
+  --color-grey900: oklch(19.176% 0.01612 290.505);
+  --color-grey850: oklch(20.948% 0.01576 290.68);
+  --color-grey800: oklch(26.112% 0.01677 290.256);
+  --color-grey700: oklch(44.605% 0.01303 291.536);
+  --color-grey600: oklch(60.043% 0.03193 294.111);
+  --color-grey200: oklch(92.412% 0.00688 295.088);
+
+  --color-green200: oklch(92.286% 0.13911 147.297);
+  --color-yellow300: oklch(86.566% 0.13115 86.941);
+  --color-orange400: oklch(72.622% 0.16366 36.683);
+  --color-red500: oklch(65.492% 0.20876 25.019);
+
+  --font-display: 'JetBrainsMono';
+}
+
+@font-face {
+  font-family: 'JetBrainsMono';
+  src: url('/src/assets/fonts/JetBrainsMono-VariableFont_wght.ttf')
+    format('truetype');
+}
+
+@utility gradient {
+  background: linear-gradient(
+    oklch(19.176% 0.01612 290.505),
+    oklch(13.231% 0.00966 297.603)
+  );
+}
+
+@utility text-preset1 {
+  font-family: 'JetBrainsMono';
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 0.7619047619;
+  letter-spacing: 0;
+}
+@utility text-preset2 {
+  font-family: 'JetBrainsMono';
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 0.75;
+  letter-spacing: 0;
+}
+@utility text-preset3 {
+  font-family: 'JetBrainsMono';
+  font-size: 1.125rem;
+  font-weight: bold;
+  line-height: 0.75;
+  letter-spacing: 0;
+}
+@utility text-preset4 {
+  font-family: 'JetBrainsMono';
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 0.8;
+  letter-spacing: 0;
+}
