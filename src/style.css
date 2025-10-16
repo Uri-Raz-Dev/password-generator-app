@@ -5,7 +5,11 @@
     /* fallback for old browser support */
     min-height: 100vh;
     min-height: 100dvh;
-    background-color: var(--color-grey950);
+    background: linear-gradient(
+      to right,
+      oklch(19.176% 0.01612 290.505),
+      oklch(13.231% 0.00966 297.603)
+    );
     color: var(--color-grey200);
   }
   #root {
