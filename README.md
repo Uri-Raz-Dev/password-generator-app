@@ -1,73 +1,51 @@
-# React + TypeScript + Vite
+### Links
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/tip-calculator-app-using-react-vite-and-tailwindcss-vuzNqUhM3o)
+- Live Site URL: [Git repository](https://uri-raz-dev.github.io/tip-calculator-app-main/)
 
-Currently, two official plugins are available:
+### Built with
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React
+- Vite
+- [Tailwind](https://tailwindcss.com/) - A utility-first CSS framework
+- Semantic HTML5 markup
+- Flexbox
+- Grid
+- Mobile-first workflow
+- JavaScript
 
-## React Compiler
+### What I learned
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Managing states in React
+- Component workflow
+- Using tailwind utility classes
+- Learn typescript basics
 
-## Expanding the ESLint configuration
+### Continued development
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+I want to learn how to make the page more responsive
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- Understand useEffect and useRef better
+- Learn about routes in React
+- Dive into the backend side of webpage
+- Learn about all Chrome dev tools options
+- How to organize the workspace
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Useful resources
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- (https://web.dev/learn/) - This helped me for learning HTML and CSS.
+- (https://developer.mozilla.org/en-US/) - Learn from documentation and example.
+- (https://sass-lang.com/)- Amazing Sass documentation helped me learn mixins,partials,etc.
+- (https://www.youtube.com/kevinpowell)- An amazing CSS developer for all kind of CSS needs, helped me with img reset.
+- (https://www.youtube.com/@javascriptmastery)- Awesome teacher explains all dev tips and tricks always updated
+- (https://dev.to/) - Amazing blogs from all devs for any subject imaginable.
+- (https://www.w3schools.com/) - Another useful resource for learning HTML and CSS.
+- (https://fedmentor.dev/) - Another useful resource for enhancing your front end's knowledge.
+- All recommendation resources given from Frontend Mentor's articles.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+  **I would like any suggestion about learning resources**
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Author
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- Website - [Uri-Raz-Dev](https://github.com/Uri-Raz-Dev)
+- Frontend Mentor - [@Uri-Raz-Dev](https://www.frontendmentor.io/profile/Uri-Raz-Dev)
