@@ -1,6 +1,6 @@
 ### Links
 
-- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/tip-calculator-app-using-react-vite-and-tailwindcss-vuzNqUhM3o)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/password-generator-NkpnSCQwEs)
 - Live Site URL: [Git repository](https://uri-raz-dev.github.io/password-generator-app/)
 
 ### Built with
@@ -20,6 +20,7 @@
 - Component workflow
 - Using tailwind utility classes
 - Learn TypeScript basics
+- How to use Shadcn components correctly
 
 ### Continued development
 
