@@ -1,7 +1,7 @@
 ### Links
 
 - Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/tip-calculator-app-using-react-vite-and-tailwindcss-vuzNqUhM3o)
-- Live Site URL: [Git repository](https://uri-raz-dev.github.io/tip-calculator-app-main/)
+- Live Site URL: [Git repository](https://uri-raz-dev.github.io/password-generator-app/)
 
 ### Built with
 
@@ -12,14 +12,14 @@
 - Flexbox
 - Grid
 - Mobile-first workflow
-- JavaScript
+- TypeScript
 
 ### What I learned
 
 - Managing states in React
 - Component workflow
 - Using tailwind utility classes
-- Learn typescript basics
+- Learn TypeScript basics
 
 ### Continued development
 
