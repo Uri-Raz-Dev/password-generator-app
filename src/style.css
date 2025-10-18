@@ -2,6 +2,8 @@
 
 @layer base {
   body {
+    display: flex;
+    justify-content: center;
     /* fallback for old browser support */
     min-height: 100vh;
     min-height: 100dvh;
@@ -33,6 +35,15 @@
   --color-red500: oklch(65.492% 0.20876 25.019);
 
   --font-display: 'JetBrainsMono';
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
 
 @font-face {
