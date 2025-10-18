@@ -64,7 +64,7 @@ const App = () => {
   }
 
   const handleStrStates = (): void => {
-    if (!check) return
+    if (!check || check.length === 0) return
     if (numOfChars < 5 && numOfChars !== 0) {
       setStrengthState('TOO WEAK!')
     } else if (numOfChars >= 5 && numOfChars < 10) {
@@ -79,16 +79,16 @@ const App = () => {
   return (
     <form
       id="password-gen"
-      className="mx-4 flex min-h-[100dvh] max-w-2xl flex-col items-center justify-center gap-4"
+      className="mx-4 flex min-h-[100dvh] flex-col items-center justify-center gap-4 md:w-xl md:gap-6"
       onSubmit={handleSubmit}
     >
-      <h1 className="text-preset4 text-(--color-grey600)">
+      <h1 className="text-preset4 md:text-preset2 text-(--color-grey600) md:mb-2">
         Password Generator
       </h1>
       <Label className="relative w-full">
         <Input
           id="password"
-          className="read-only:text-preset2 h-12 w-full bg-(--color-grey800) p-4 placeholder:text-[1.5rem] placeholder:leading-3 placeholder:font-(--font-display) placeholder:font-bold placeholder:tracking-normal placeholder:text-(--color-grey700)"
+          className="read-only:text-preset2 md:read-only:text-preset1 h-12 w-full bg-(--color-grey800) p-4 placeholder:text-[1.5rem] placeholder:leading-3 placeholder:font-(--font-display) placeholder:font-bold placeholder:tracking-normal placeholder:text-(--color-grey700) md:px-8 md:py-8 md:placeholder:text-3xl"
           type="text"
           readOnly
           placeholder="P4$5W0rD!"
@@ -103,26 +103,28 @@ const App = () => {
               setTimeout(() => setTxt(null), 1000)
             })
           }}
-          className="absolute right-4 bottom-3.5 cursor-pointer"
+          className="absolute right-4 bottom-3.5 cursor-pointer md:bottom-5"
         >
           <img src={copy} alt="copy text to clipboard" />
         </button>
         {txt && (
-          <span className="text-preset4 absolute right-0 bottom-15.5 [animation:fade-out_1s_ease-in-out_forwards] text-(--color-green200)">
-            copied
+          <span className="text-preset3 md:text-preset2 absolute right-0 bottom-15.5 [animation:fade-out_1s_ease-in-out_forwards] text-(--color-green200) md:bottom-18">
+            COPIED
           </span>
         )}
       </Label>
 
-      <section className="flex w-full flex-col gap-8 bg-(--color-grey800) p-4">
+      <section className="flex w-full flex-col gap-8 bg-(--color-grey800) p-4 md:px-8 md:py-6">
         <PasswordSlider numOfChars={numOfChars} setNumOfChars={setNumOfChars} />
 
         <PasswordFilter check={check} setCheck={setCheck} />
 
         <PasswordStrength strengthState={strengthState} />
 
-        <Button className="after:content-[{arrow}] -mt-4 flex cursor-pointer gap-4 bg-(--color-green200) py-7">
-          <span className="text-preset4 text-(--color-grey800)">GENERATE</span>
+        <Button className="after:content-[{arrow}] -mt-4 flex cursor-pointer gap-4 bg-(--color-green200) py-7 md:mt-0 md:py-8">
+          <span className="text-preset4 md:text-preset3 text-(--color-grey800)">
+            GENERATE
+          </span>
           <img src={arrow} alt="arrow" />
         </Button>
       </section>

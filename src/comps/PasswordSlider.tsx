@@ -11,12 +11,15 @@ const PasswordSlider = ({
   const maxStep: number = 20
 
   return (
-    <section className="flex flex-col gap-7">
-      <section className="flex justify-between">
-        <Label className="text-preset4 text-(--color-grey200)" htmlFor="slider">
+    <section className="flex flex-col justify-center gap-7 md:gap-9">
+      <section className="flex items-center justify-between">
+        <Label
+          className="text-preset4 md:text-preset3 text-(--color-grey200)"
+          htmlFor="slider"
+        >
           Character Length
         </Label>
-        <span className="text-preset2 text-(--color-green200)">
+        <span className="text-preset2 md:text-preset1 text-(--color-green200)">
           {numOfChars}
         </span>
       </section>

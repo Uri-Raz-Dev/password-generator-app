@@ -10,28 +10,30 @@ const PasswordStrength = ({
     let color = ''
 
     if (key === 1 && strengthState === 'TOO WEAK!')
-      color = 'bg-(--color-red500)'
+      color = 'bg-(--color-red500) border-(--color-red500)'
     else if ((key === 1 || key === 2) && strengthState === 'WEAK')
-      color = 'bg-(--color-orange400)'
+      color = 'bg-(--color-orange400) -(--color-orange400)'
     else if (
       (key === 1 || key === 2 || key === 3) &&
       strengthState === 'MEDIUM'
     )
-      color = 'bg-(--color-yellow300)'
+      color = 'bg-(--color-yellow300) border-(--color-yellow300)'
     else if (
       (key === 1 || key === 2 || key === 3 || key === 4) &&
       strengthState === 'STRONG'
     )
-      color = 'bg-(--color-green200)'
+      color = 'bg-(--color-green200) border-(--color-green200)'
 
     return <li key={key} className={`${base} ${color}`}></li>
   }
 
   return (
-    <section className="flex items-center justify-between bg-(--color-grey850) px-4 py-5.5">
-      <span className="text-preset4 text-(--color-grey600)">STRENGTH</span>
-      <section className="flex">
-        <span className="text-preset3 text-(--color-grey200)">
+    <section className="flex items-center justify-between bg-(--color-grey850) px-4 py-5.5 md:px-5 md:py-6.5">
+      <span className="text-preset4 md:text-preset3 text-(--color-grey600)">
+        STRENGTH
+      </span>
+      <section className="flex items-center gap-2">
+        <span className="text-preset3 md:text-preset2 text-(--color-grey200)">
           {strengthState}
         </span>
         <ul className="flex -space-x-2">
